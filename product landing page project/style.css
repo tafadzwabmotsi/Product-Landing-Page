@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine|Poppins|Lobster|Inconsolata"');
+
+
+
+* {
+    font-family: Poppins, monospace;
+    color: #000;
+    background-color: #f2f5f4;
+}
+
+html, body{
+    margin: 0px;
+}
+
+
+
+/* header and nav links */
+header{
+    margin-top: 0px;
+    position: fixed;
+}
+
+.topnav{
+    display: none;
+}
+
+
+#header-img {
+    display: flex;
+    align-items: center;
+    width: 10%;
+    height: auto;
+    margin-right: 10%;
+    padding-top: 20px;
+}
+
+
+#header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#nav-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#left-nav-div {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#right-nav-div {
+    width: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+i {
+    font-size: 20px;
+}
+
+/* Tag line and container */
+
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0px auto 2% auto;
+    padding-top: 2%;
+}
+
+
+#tag-line {
+    font-size: 1.75em;
+    text-align: center;
+}
+
+/* form */
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* email */
+#email {
+    width: 40%;
+    height: 25px;
+    margin: 1% auto 1% auto;
+    font-size: 1.25rem;
+    box-sizing: border-box;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #f2f5f3;
+}
+
+/* submit */
+#submit {
+    width: 20%;
+    margin: 1% auto 1% auto;
+    padding: 5px;
+}
+
+.button {
+    background-color: #181921;
+    color: #f2f3f7;
+    opacity: 0.9;
+    border-radius: 10px;
+    /* font-family: Lobster; */
+}
+
+.button:hover {
+    background-color: #0f631f;
+    color: #000000;
+    font-weight: bolder;
+}
+
+input {
+    text-align: center;
+}
+
+/* features */
+#feature-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+/* image */
+div img {
+    justify-content: center;
+    width: 20%;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 2%;
+}
+.feature-desc{
+    margin-left: 1%;
+    text-align: left;
+}
+
+/* watch video */
+.video-div{
+    width: auto;
+    height: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.feature-h2{
+    font-size: 1.2rem;
+}
+
+/* iframe */
+iframe{
+    width: 50%;
+    height: 300px;
+}
+
+/* pricing */
+#pricing{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.price-div{
+    align-items: center;
+    text-align: center;
+    line-height: 1.8;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    width: 30%;
+    height: auto;
+}
+
+.price-p{
+    text-align: center;
+    font-size: 0px;
+    border-radius: 2px;
+    background-color: #434747;
+    color: #f2f3f7;
+    opacity: 0.8;
+    font-size: 1.2rem;
+}
+
+.cart{
+    background-color: #181921;
+    color: #f2f3f7;
+    opacity: 0.9;
+    border-radius: 2px;
+    width: 40%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+.cart:hover {
+    background-color: #0f631f;
+    color: #000000;
+    font-weight: bolder;
+}
+
+.price{
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+
+/* footer */
+#footer{
+    margin-right: 10%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#c, #t{
+    margin-left: 20px;
+}
+
+li a{
+    text-decoration: none;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+}
+
+/* Humburger - menu */
+.topnav {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .topnav #links {
+    display: none;
+  }
+  
+  .topnav a {
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  
+
+/* Media queries */
+@media only screen and (max-width: 360px) {
+    #header {
+      display: none;
+    }
+
+    
+
+    #container{
+        margin-top: 5%;
+    }
+
+    #tag-line {
+        font-size: 1em;
+        text-align: center;
+        margin-bottom: 1%;
+    }
+
+    #email{
+        margin-top: 0%;
+        width: auto;
+        font-size: 100%;
+    }
+
+    #submit{
+        margin-top: 4%;
+        width: auto;
+    }
+
+    .feature{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feature-img{
+        margin-bottom: -30px;
+        width: 35%;
+    }
+
+    .feature-h2{
+       margin-left: -57%;
+       font-size: 16px;
+    }
+
+    .feature-p{
+        margin-top: -15px;
+        margin-left: 5px;
+        font-size: 13px;
+    }
+
+    iframe{
+        width: 100%;
+        height: 80%;
+    }
+
+    #pricing{
+        display: grid;
+        grid-gap: 10px;
+    }
+
+    .price-div{
+        width: 100%;
+    }
+
+}
+
+
+@media only screen and (max-width: 500px) {
+    #header {
+      display: none;
+    }
+
+    .topnav{
+        display: block;
+    }
+
+    #container{
+        margin-top: 1%;
+    }
+
+    #tag-line {
+        font-size: 1em;
+        text-align: center;
+        margin-bottom: 1%;
+    }
+
+    #email{
+        margin-top: 0%;
+        width: auto;
+        font-size: 100%;
+    }
+
+    #submit{
+        margin-top: 4%;
+        width: auto;
+    }
+
+    .feature-img{
+        margin-bottom: -30px;
+        width: 35%;
+    }
+
+    .feature-div{
+        margin: auto
+    }
+
+    .feature-h2{
+       font-size: 16px;
+    }
+
+    .feature-p{
+        margin-left: 5px;
+        font-size: 13px;
+    }
+
+    iframe{
+        width: 100%;
+        height: 80%;
+    }
+
+    #pricing{
+        display: grid;
+        margin: auto;
+        grid-gap: 10px;
+    }
+
+    .price-div{
+        width: 100%;
+    }
+
+    #footer{
+        margin-right: 18%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #header {
+        display: none;
+      }
+  
+      .topnav{
+          display: block;
+      }
+  
+}

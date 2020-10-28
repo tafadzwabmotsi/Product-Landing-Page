@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <title>Product Landing Page</title>
+</head>
+<body>
+    <!-- header and nav -->
+    <header id="header">
+        <img id="header-img" src="https://i.ibb.co/1fP3dF8/raspberry-pi.png" alt="Raspberry-PI">
+        <nav id="nav-bar">
+            <div id="left-nav-div" class="nav-div">
+                <a href="#container" class="nav-link">Home</a>
+                <a href="#feature-div" class="nav-link">Features</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+            </div>
+
+            <div id="right-nav-div" class="nav-div">   
+                <a href="#" class="nav-link"><i class="fab fa-facebook-square"></i></a>
+                <a href="#" class="nav-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="nav-link"><i class="fas fa-user"></i></a>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- Hamburger menu -->
+    <div class="topnav">
+        <div id="links" class="nav-div-h">
+            <a href="#container" class="nav-link-h">Home</a>
+            <a href="#feature-div" class="nav-link-h">Features</a>
+            <a href="#pricing" class="nav-link-h">Pricing</a>
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="humburgerFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+        <a href="#" class="nav-link"><i class="fas fa-user"></i></a>
+    </div>
+
+    <!-- container -->
+    <div id="container">
+        <h1 id="tag-line">Getting your pocket sized desktop</h1>
+
+        <!-- form -->
+        <form action=" https://www.freecodecamp.com/email-submit" id="form">
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            <input id="submit" type="submit" value="Get Started" class="button" />
+        </form>
+
+
+        <div id="feature-div">
+            <div class="feature">
+                <img class="feature-img" src="https://i.ibb.co/GtTSwyj/raspberry-pi-mother-board.jpg" alt="Motherboard services">
+                <div class="feature-desc">
+                    <h2 class="feature-h2">Motherboard Design</h2>
+                    <p class="feature-p">Motherboard designed with mobility and flexibility at heart.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <img class="feature-img" src="https://i.ibb.co/wSVhNtJ/raspberry-pi-camera-module.jpg" alt="Camera module services">
+                <div class="feature-desc">
+                    <h2 class="feature-h2">Incredible Camera System</h2>
+                    <p class="feature-p">The Camera Module can be used to take high-definition video, as well as stills photographs.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <img class="feature-img" src="https://i.ibb.co/R0RrVJp/raspberry-pi-infrared.jpg" alt="Infrared services">
+                <div class="feature-desc">
+                    <h2 class="feature-h2">Quality Infrared features</h2>
+                    <p class="feature-p">Infrared photography, low light photography, monitoring plant growth, CCTV security camera.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-div">
+            <iframe id="video" src="https://www.youtube.com/embed/myAAn-XiG-0"  frameborder="0" allowfullscreen>
+            </iframe>
+        </div>
+
+        <div id="pricing">
+            <div class="price-div">
+                <p class="price-p">CanaKit Raspberry Pi 3 B+</p>
+                <p class="price">$32.00</p>
+                <p> Micro USB Cable and Noise Filter</p>
+                <p>Set of 2 Aluminum Heat Sinks</p>
+                <p>CanaKit Quick-Start Guide</p>
+                <button class="cart">Add to cart</button>
+            </div>
+            <div class="price-div">
+                <p class="price-p">CanaKit Raspberry Pi 4 Starter Kit</p>
+                <p class="price">$87.99</p>
+                <p> Includes Raspberry Pi 4 4GB Model B</p>
+                <p>32GB Samsung EVO+ Micro SD Card</p>
+                <p>CanaKit USB-C PiSwitch</p>
+                <button class="cart">Add to cart</button>
+            </div>
+            <div class="price-div">
+                <p class="price-p">Raspberry Pi 4 Model B Quad</p>
+                <p class="price">$114.97</p>
+                <p> 2 × USB 3. 0 ports</p>
+                <p>2-lane MIPI DSI/CSI ports</p>
+                <p> USB Type C or gpio-poep</p>
+                <button class="cart">Add to cart</button>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <ul>
+            <li id="p"><a href="#">Privacy</a></li>
+            <li id="t"><a href="#">Terms</a></li>
+            <li id="c"><a href="#">Contact</a></li>
+          </ul>
+          <span>Copyright 2020, Raspberry PI</span>
+    </footer>
+
+</body>
+
+<script>
+    function humburgerFunction(){
+       var x = document.getElementById("links");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } 
+        else {
+            x.style.display = "block";
+        }
+    }
+</script>
+</html>
